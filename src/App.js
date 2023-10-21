@@ -1,10 +1,24 @@
 import './App.css';
-import { React, useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+//pages
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
 
 function App() {
   return (
     <div className="App">
-      <h1>MiniBlog</h1>
+      <BrowserRouter>
+      <Navbar />
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<Home />}></Route>
+            <Route path='/about' element={<About />}></Route>
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
