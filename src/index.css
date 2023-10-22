@@ -119,3 +119,61 @@ button[disabled] {
   background-color: #000;
   color: #fff;
 }
+
+/* Responsivo para telas menores */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  form {
+    max-width: 80%;
+  }
+
+  label {
+    margin-bottom: 0.7em;
+  }
+
+  input,
+  textarea {
+    padding: 0.6em 0;
+  }
+
+  .btn {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 12px 0;
+  }
+
+  .btn.btn-outline {
+    padding: 10px 0;
+  }
+
+  .btn.btn-dark {
+    border-radius: 10px;
+  }
+
+  .container .error {
+    font-size: 0.9em;
+  }
+}
+
+/* Responsivo para telas muito pequenas (exemplo: smartphones em modo paisagem) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 1em;
+    padding: 10px 0;
+  }
+
+  .btn.btn-outline {
+    padding: 8px 0;
+  }
+
+  .container .error {
+    font-size: 0.8em;
+  }
+}
