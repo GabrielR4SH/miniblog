@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import styles from "./Register.module.css"
-import { useAuthentication } from '../../components/hooks/useAuthentication';
+import { useAuthentication } from '../../hooks/useAuthentication';
 
 function Register() {
 
